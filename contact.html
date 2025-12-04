@@ -1,76 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Contact – Rusquel Ramirez</title>
+    <!-- contact.html -->
     <meta charset="utf-8">
-    <meta name="description" content="Contact page for Rusquel Ramirez">
-    <meta name="keywords" content="Contact Form, Cybersecurity, Portfolio">
+    <meta name="description" content="Contact Rusquel Ramirez — Aspiring Digital Forensics Specialist.">
+    <meta name="keywords" content="Contact Form, Portfolio">
     <meta name="author" content="Rusquel Ramirez">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Contact — Rusquel Ramirez</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
     <header>
-        <img src="logo.png" alt="Rusquel Ramirez Logo" style="height:80px;">
-        <h2>Rusquel Ramirez</h2>
-        <h3>Aspiring Digital Forensics Specialist</h3>
+        <img src="logo.png" alt="Rusquel Ramirez logo" class="logo">
+        <div class="site-title">
+            <h1>Rusquel Ramirez</h1>
+            <h2>Aspiring Digital Forensics Specialist</h2>
+        </div>
     </header>
 
     <main>
-        <section>
-            <nav>
-                <h3>Contact Information</h3>
-                <ul>
-                    <li>Email: example@email.com</li>
+        <section class="two-col">
+            <nav class="left" aria-label="Sidebar navigation">
+                <h3>Contact</h3>
+                <ul class="contact-list">
+                    <li>Email: <a href="mailto:example@email.com">example@email.com</a></li>
                     <li>Phone: (555) 000-0000</li>
-                    <li>Address: Brockport, NY</li>
+                    <li>Location: Brockport, NY</li>
                 </ul>
+
                 <hr>
 
                 <h3>Navigation</h3>
-                <ul>
+                <ul class="global-nav">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="resume.html">Resume</a></li>
-                    <li><a href="honors.html">Honors & Awards</a></li>
+                    <li><a href="honors.html">Honors &amp; Awards</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
 
-            <article>
-                <h1>Contact Form</h1>
+            <article class="center">
+                <h1>Contact</h1>
                 <hr>
+                <p>If you'd like to get in touch, please use the embedded Google Form below or open it in a new tab.</p>
 
-                <p>If you have any questions or comments, please feel free to reach out using the form below.</p>
+                <!-- Embedded Google Form -->
+                <div class="form-container" aria-hidden="false">
+                    <iframe
+                        src="https://docs.google.com/forms/d/e/1FAIpQLSdwXHaUSVPRB2EnT40FI5nBMPl5SoXiupbOAU-vAGbCDzO9bg/viewform?embedded=true"
+                        title="Contact Form for Rusquel Ramirez"
+                        width="100%"
+                        height="800"
+                        frameborder="0"
+                        marginheight="0"
+                        marginwidth="0"
+                        loading="lazy">
+                        Loading…
+                    </iframe>
+                </div>
 
-                <form action="" method="post">
-                    <label for="fname">First Name:</label><br>
-                    <input type="text" id="fname" name="fname"><br>
-
-                    <label for="lname">Last Name:</label><br>
-                    <input type="text" id="lname" name="lname"><br><br>
-
-                    <label for="email">Email:</label><br>
-                    <input type="email" id="email" name="email"><br><br>
-
-                    <label for="number">Phone Number:</label><br>
-                    <input type="text" id="number" name="number"><br><br>
-
-                    <h4>Submission Type</h4>
-                    <input type="radio" id="comment" name="submission" value="Comment">
-                    <label for="comment">Comment</label><br>
-
-                    <input type="radio" id="question" name="submission" value="Question">
-                    <label for="question">Question</label><br>
-
-                    <input type="radio" id="concern" name="submission" value="Concern">
-                    <label for="concern">Concern</label><br><br>
-
-                    <textarea name="message" rows="5" cols="45" placeholder="Type your message here..."></textarea><br>
-
-                    <input type="submit" value="Submit">
-                    <input type="reset" value="Clear">
-                </form>
+                <p>If the form above does not load, open it here: <a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSdwXHaUSVPRB2EnT40FI5nBMPl5SoXiupbOAU-vAGbCDzO9bg/viewform?usp=sharing"
+                    target="_blank" rel="noopener">Google Contact Form</a>
+                </p>
             </article>
         </section>
     </main>
