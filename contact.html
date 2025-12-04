@@ -1,169 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<!-- HTML Header -->
-    <title>Contact</title> 
+    <title>Contact – Rusquel Ramirez</title>
     <meta charset="utf-8">
-	<meta name="description" content="CIS117 Lab 2">
-	<meta name="author" content="Rusquel Ramirez">
-	<meta name="keywords" content="html, tags, heading, self-promo">
-	
-	<style>
-        * {
-            box-sizing: border-box;
-        }
+    <meta name="description" content="Contact page for Rusquel Ramirez">
+    <meta name="keywords" content="Contact Form, Cybersecurity, Portfolio">
+    <meta name="author" content="Rusquel Ramirez">
 
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            margin: 0;
-        }
-
-        header {
-            background-color: #549E39;
-            padding: 30px;
-            text-align: center;
-            font-size: 35px;
-            color: white;
-        }
-
-        section {
-            display: flex;
-            min-height: calc(100vh - 160px); /* Adjust for header + footer height */
-        }
-
-        nav {
-            width: 30%;
-            background: #2A4F1D;
-            padding: 20px;
-            color: white;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-        }
-
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-            color: white;
-        }
-
-        article {
-            width: 70%;
-            padding: 20px;
-            background-color: #f1f1f1;
-        }
-
-        table, th, td {
-            border: 1px solid #333;
-            border-collapse: collapse;
-            padding: 8px;
-        }
-
-        th {
-            background-color: #549E39;
-            color: white;
-        }
-
-        @media (max-width: 600px) {
-            section {
-                flex-direction: column;
-            }
-
-            nav, article {
-                width: 100%;
-                height: auto;
-            }
-        }
-
-        footer {
-            text-align: center;
-            background-color: #549E39;
-            color: white;
-            padding: 10px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-	<header>
-		<img src="logo.png" alt="Rusquel Ramirez Logo" style="height:80px;">
-		<h2>Rusquel Ramirez</h2>
-        <h3>Professional Position</h3>
-	</header>
-		
-	<main>
-		<section>
-			<nav>
-				<div>
-					<h3>Contact Information</h3>
-					<ul>
-						<li>Email:</li>
-						<li>Phone Number:</li>
-						<li>Address:</li>
-					</ul>
-					<hr>
-					
-					<h3>Navigation</h3>
-					<ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="resume.html">Resume</a></li>
-						<li><a href="honors.html">Honors and Awards</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-					</ul>
-				</div>
-			</nav>
-				
-			<article>
-				<h1>Contact Form</h1>
-				<hr>
-				
-				<p>For any questions, comments, or concerns, please fill out the form below.</p>
-				<br>
-				
-				<form action="mailto:yourname@example.com" method="post" enctype="text/plain">
-					<label for="fname">First Name:</label><br>
-					<input type="text" id="fname" name="fname"><br>
-					
-					<label for="lname">Last Name:</label><br>
-					<input type="text" id="lname" name="lname"><br><br>
-							
-					<label for="email">Email:</label><br>
-					<input type="email" id="email" name="email"><br><br>
-						
-					<label for="number">Phone Number (No special characters):</label><br>
-					<input type="text" id="number" name="number"><br><br>
-							
-					<h4>Submission Type</h4>
-					<input type="checkbox" id="comment" name="submission" value="Comment">
-					<label for="comment">Comment</label><br>
-					
-					<input type="checkbox" id="question" name="submission" value="Question">
-					<label for="question">Question</label><br>
-					
-					<input type="checkbox" id="concern" name="submission" value="Concern">
-					<label for="concern">Concern</label><br><br>
-							
-					<textarea name="message" rows="5" cols="45">Please type your comment/question/concern here.</textarea><br>
-						
-					<input type="submit" value="Submit">
-					<input type="reset" value="Clear">
-				</form>
-			</article>
-		</section>
-	</main>
+    <header>
+        <img src="logo.png" alt="Rusquel Ramirez Logo" style="height:80px;">
+        <h2>Rusquel Ramirez</h2>
+        <h3>Aspiring Digital Forensics Specialist</h3>
+    </header>
+
+    <main>
+        <section>
+            <nav>
+                <h3>Contact Information</h3>
+                <ul>
+                    <li>Email: example@email.com</li>
+                    <li>Phone: (555) 000-0000</li>
+                    <li>Address: Brockport, NY</li>
+                </ul>
+                <hr>
+
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="honors.html">Honors & Awards</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <article>
+                <h1>Contact Form</h1>
+                <hr>
+
+                <p>If you have any questions or comments, please feel free to reach out using the form below.</p>
+
+                <form action="" method="post">
+                    <label for="fname">First Name:</label><br>
+                    <input type="text" id="fname" name="fname"><br>
+
+                    <label for="lname">Last Name:</label><br>
+                    <input type="text" id="lname" name="lname"><br><br>
+
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email"><br><br>
+
+                    <label for="number">Phone Number:</label><br>
+                    <input type="text" id="number" name="number"><br><br>
+
+                    <h4>Submission Type</h4>
+                    <input type="radio" id="comment" name="submission" value="Comment">
+                    <label for="comment">Comment</label><br>
+
+                    <input type="radio" id="question" name="submission" value="Question">
+                    <label for="question">Question</label><br>
+
+                    <input type="radio" id="concern" name="submission" value="Concern">
+                    <label for="concern">Concern</label><br><br>
+
+                    <textarea name="message" rows="5" cols="45" placeholder="Type your message here..."></textarea><br>
+
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Clear">
+                </form>
+            </article>
+        </section>
+    </main>
 
     <footer>
-		<p>&copy; 2025 Rusquel A. Ramirez</p>
-	</footer>
+        <p>&copy; 2025 Rusquel A. Ramirez</p>
+        <p>Online version: <a href="https://rrgituser.github.io">https://rrgituser.github.io</a></p>
+    </footer>
 </body>
 </html>
