@@ -1,119 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Resume – Rusquel Ramirez</title>
+    <!-- resume.html -->
     <meta charset="utf-8">
-    <meta name="description" content="Professional resume for Rusquel Ramirez.">
-    <meta name="keywords" content="Resume, Cybersecurity, Skills, Professional Experience">
+    <meta name="description" content="Professional resume for Rusquel Ramirez, Aspiring Digital Forensics Specialist.">
+    <meta name="keywords" content="Resume, Cybersecurity, Digital Forensics, Skills">
     <meta name="author" content="Rusquel Ramirez">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Resume — Rusquel Ramirez</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
     <header>
-        <img src="logo.png" alt="Rusquel Ramirez Logo" style="height:80px;">
-        <h2>Rusquel Ramirez</h2>
-        <h3>Aspiring Digital Forensics Specialist</h3>
+        <img src="logo.png" alt="Rusquel Ramirez logo" class="logo">
+        <div class="site-title">
+            <h1>Rusquel Ramirez</h1>
+            <h2>Aspiring Digital Forensics Specialist</h2>
+        </div>
     </header>
 
     <main>
-        <section>
-            <nav>
-                <h3>Contact Information</h3>
-                <ul>
-                    <li>Email: example@email.com</li>
-                    <li>Phone: (555) 000-0000</li>
-                    <li>Address: Brockport, NY</li>
+        <section class="two-col">
+            <!-- Left nav column -->
+            <nav class="left" aria-label="Sidebar navigation">
+                <h3>Contact</h3>
+                <ul class="contact-list">
+                    <li>Email: <a href="mailto:rrami2@brockport.edu">rrami2@brockport.edu</a></li>
+                    <li>Phone: (###) ###-####</li>
+                    <li>Location: Rochester, NY</li>
                 </ul>
+
                 <hr>
 
                 <h3>Navigation</h3>
-                <ul>
+                <ul class="global-nav">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="resume.html">Resume</a></li>
-                    <li><a href="honors.html">Honors & Awards</a></li>
+                    <li><a href="honors.html">Honors &amp; Awards</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
 
-            <article>
+            <!-- Main resume content -->
+            <article class="center" id="resume-main">
                 <h1>Professional Resume</h1>
 
-                <h2>Summary</h2>
-                <hr>
-                <p>
-                    Tech-savvy and adaptable, with hands-on experience across several service and support roles. 
-                    Strong interest in cybersecurity, investigative technology, and improving digital safety. 
-                    Skilled in problem-solving, communication, and learning new technologies quickly.
-                </p>
+                <section id="summary">
+                    <h2>Summary</h2>
+                    <p>
+                        Tech-savvy and adaptable with hands-on experience in service roles and a growing focus on
+                        cybersecurity and investigative techniques. Strong communication, problem solving, and
+                        a demonstrated ability to learn technical tools quickly.
+                    </p>
+                </section>
 
-                <h2>Job History</h2>
-                <hr>
+                <section id="experience">
+                    <h2>Work Experience</h2>
+                    <ol>
+                        <li>
+                            <strong>Food Service / Cashier Assistant</strong> — Costco Wholesale<br>
+                            <em>June 2025 — Present</em>
+                            <ul>
+                                <li>Delivered friendly customer service in a high-volume environment.</li>
+                                <li>Handled transactions and supported inventory and food-prep operations.</li>
+                            </ul>
+                        </li>
 
-                <ol>
-                    <li>
-                        <strong>Food Service/Cashier Assistant</strong> | June 2025 – Present  
-                        <p><em>Costco Wholesale</em></p>
-                        <ul>
-                            <li>Provided customer service in a fast-paced environment</li>
-                            <li>Handled transactions and maintained accurate registers</li>
-                            <li>Supported food preparation workflow and inventory restocking</li>
-                        </ul>
-                    </li>
+                        <li>
+                            <strong>Wheelchair Attendant</strong> — Primeflight<br>
+                            <em>Aug 2024 — May 2025</em>
+                            <ul>
+                                <li>Assisted passengers with special needs and coordinated with gate staff.</li>
+                                <li>Provided safe transport and ensured passenger comfort.</li>
+                            </ul>
+                        </li>
 
-                    <li>
-                        <strong>Wheelchair Attendant</strong> | Aug 2024 – May 2025  
-                        <p><em>Primeflight</em></p>
-                        <ul>
-                            <li>Assisted special-needs passengers with mobility and boarding</li>
-                            <li>Coordinated with gate agents to ensure proper placement</li>
-                            <li>Helped with belongings and ensured a smooth travel experience</li>
-                        </ul>
-                    </li>
+                        <li>
+                            <strong>Babysitter</strong> — Private Families<br>
+                            <em>Oct 2022 — Present</em>
+                            <ul>
+                                <li>Organized activities, resolved conflicts, and maintained structured routines.</li>
+                            </ul>
+                        </li>
 
-                    <li>
-                        <strong>Babysitter</strong> | Oct 2022 – Present  
-                        <p><em>Private Families</em></p>
-                        <ul>
-                            <li>Helped children with personal growth and emotional support</li>
-                            <li>Resolved conflicts using patience and communication</li>
-                            <li>Maintained structured routines and reported progress to parents</li>
-                        </ul>
-                    </li>
+                        <li>
+                            <strong>Medical Research Volunteer</strong> — Research Project (Coordinator: Erika Little)<br>
+                            <em>Jun 2022 — Nov 2024</em>
+                            <ul>
+                                <li>Participated in a long-term study about blood pressure impacts on youth.</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </section>
 
-                    <li>
-                        <strong>Medical Research Volunteer</strong> | Jun 2022 – Nov 2024  
-                        <p><em>Research Study, Erika Little (Coordinator)</em></p>
-                        <ul>
-                            <li>Participated in an 18-month research project about blood pressure in youth</li>
-                        </ul>
-                    </li>
-                </ol>
+                <section id="skills">
+                    <h2>Skills</h2>
+                    <p>
+                        Appointment setting • Microsoft Office • General computer skills • Routine management •
+                        Communication • Usability understanding
+                    </p>
 
-                <h2>Skills</h2>
-                <hr>
-                <p>
-                    Appointment Setting • Microsoft Office • Computer Skills • Routine Management •  
-                    Communication • Usability Understanding • Activity Planning
-                </p>
-
-                <h4>Languages</h4>
-                <hr>
-                <table>
-                    <tr>
-                        <th>Fluent</th>
-                        <td>Spanish, English</td>
-                    </tr>
-                    <tr>
-                        <th>Intermediate</th>
-                        <td>Real Language</td>
-                    </tr>
-                    <tr>
-                        <th>Beginner</th>
-                        <td>Japanese</td>
-                    </tr>
-                </table>
+                    <h3>Languages</h3>
+                    <table>
+                        <tr><th>Fluent</th><td>Spanish, English</td></tr>
+                        <tr><th>Intermediate</th><td>Real Language</td></tr>
+                        <tr><th>Beginner</th><td>Japanese</td></tr>
+                    </table>
+                </section>
             </article>
         </section>
     </main>

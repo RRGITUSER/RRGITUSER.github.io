@@ -1,86 +1,115 @@
-/* Global Layout */
+/* Reset / box sizing */
 * {
     box-sizing: border-box;
 }
 
+/* Base styles */
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
+    line-height: 1.45;
+    color: #222;
+    background: #ffffff;
 }
 
+/* Header */
 header {
-    background-color: #549E39;
-    padding: 30px;
-    text-align: center;
-    font-size: 35px;
-    color: white;
-}
-
-section {
     display: flex;
-    min-height: calc(100vh - 160px);
+    align-items: center;
+    gap: 16px;
+    background-color: #549E39;
+    color: #fff;
+    padding: 18px 20px;
+}
+.logo {
+    height: 72px;
+    width: auto;
+}
+.site-title h1, .site-title h2 {
+    margin: 0;
+}
+.site-title h1 { font-size: 22px; }
+.site-title h2 { font-size: 14px; font-weight: 400; opacity: 0.95; }
+
+/* Main containers */
+main { padding: 18px; }
+
+/* === THREE-COLUMN layout (used on index.html) === */
+.three-col {
+    display: flex;
+    gap: 20px;
+    min-height: calc(100vh - 200px); /* header + footer buffer */
 }
 
-nav {
-    width: 30%;
-    background: #2A4F1D;
-    padding: 20px;
-    color: white;
+/* columns are percentage-based as required */
+.three-col .left { width: 23%; }
+.three-col .center { width: 54%; background: #f1f1f1; padding: 18px; }
+.three-col .right { width: 23%; background: #f9f9f9; padding: 18px; }
+
+.three-col aside, .three-col article {
+    padding: 10px;
 }
 
-nav ul {
-    list-style-type: none;
+/* === TWO-COLUMN layout (used on resume/contact/honors) === */
+.two-col { display: flex; gap: 20px; min-height: calc(100vh - 200px); }
+.two-col .left { width: 30%; background: #2A4F1D; color: #fff; padding: 20px; }
+.two-col .center { width: 70%; background: #f1f1f1; padding: 20px; }
+
+/* Navigation & lists */
+.global-nav ul, .contact-list, .global-nav {
+    list-style: none;
     padding: 0;
+    margin: 0;
 }
-
-nav a {
-    color: white;
+.global-nav li { margin: 8px 0; }
+.global-nav a {
+    color: #fff;
     text-decoration: none;
     font-weight: bold;
 }
+.global-nav a:hover { text-decoration: underline; color: #A8E6A3; }
 
-nav a:hover {
-    color: #A8E6A3;
-    text-decoration: underline;
-}
+/* Links in center column should be readable */
+.center a { color: #1a5a00; }
 
-article {
-    width: 70%;
-    padding: 20px;
-    background-color: #f1f1f1;
-}
-
-article h1, h2, h3 {
-    margin-top: 10px;
-}
+/* Articles */
+article h1 { margin-top: 0; font-size: 24px; }
+article h2, article h3, article h4 { margin-bottom: 8px; }
 
 /* Tables */
-table, th, td {
-    border: 1px solid #333;
+table {
+    width: 100%;
     border-collapse: collapse;
+    margin: 12px 0;
+}
+table th, table td {
+    border: 1px solid #333;
     padding: 8px;
 }
-
-th {
+table th {
     background-color: #549E39;
-    color: white;
+    color: #fff;
 }
 
-/* Responsive */
-@media (max-width: 600px) {
-    section {
-        flex-direction: column;
-    }
-
-    nav, article {
-        width: 100%;
-    }
-}
+/* Forms (if used) */
+.form-container iframe { border: 1px solid #ccc; border-radius: 4px; }
 
 /* Footer */
 footer {
-    text-align: center;
     background-color: #549E39;
-    color: white;
-    padding: 10px;
+    color: #fff;
+    padding: 12px 20px;
+    text-align: center;
+}
+
+/* Responsive: stack columns on small screens */
+@media (max-width: 800px) {
+    .three-col, .two-col { flex-direction: column; }
+    .three-col .left, .three-col .center, .three-col .right,
+    .two-col .left, .two-col .center {
+        width: 100%;
+    }
+
+    header { flex-direction: column; align-items: center; text-align: center; gap: 8px; }
+    .logo { height: 60px; }
 }
